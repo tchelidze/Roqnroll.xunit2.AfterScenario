@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<IsPackable>false</IsPackable>
+		<LangVersion>latest</LangVersion>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<!-- test project dependencies (MsTest) -->
+		<!-- for MSTestAdapter it works -->
+		<!-- <PackageReference Include="MSTest.TestAdapter" Version="3.7.2" /> -->
+		<!-- <PackageReference Include="MSTest.TestFramework" Version="3.7.2" /> -->
+
+		<PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.9.0" />
+		<PackageReference Include="xunit.core" Version="2.8.0" />
+		<PackageReference Include="xunit" Version="2.8.0" />
+		<PackageReference Include="Xunit.Extensions.AssemblyFixture" Version="2.6.0" />
+
+		<PackageReference Include="xunit.runner.visualstudio" Version="2.8.0">
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+			<PrivateAssets>all</PrivateAssets>
+		</PackageReference>
+
+		<!-- Reqnroll -->
+		<!-- <PackageReference Include="Reqnroll.MsTest" Version="2.2.1" /> -->
+
+		<PackageReference Include="Reqnroll" Version="2.2.1" />
+		<PackageReference Include="ReqnrollExtra.Assist.Dynamic" Version="0.0.1" />
+		<PackageReference Include="Reqnroll.xUnit" Version="2.2.1" />
+	</ItemGroup>
+
+</Project>
