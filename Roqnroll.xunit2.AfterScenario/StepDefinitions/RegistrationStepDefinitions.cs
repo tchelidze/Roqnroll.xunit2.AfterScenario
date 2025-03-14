@@ -6,12 +6,12 @@ namespace Roqnroll.xunit2.AfterScenario.StepDefinitions;
 public class RegistrationStepDefinitions
 {
     [Given("sample given")]
-    public void GivenThereIsAUserRegisteredWithUserNameAndPassword(string userName, string password)
+    public void GivenThereIsAUserRegisteredWithUserNameAndPassword()
     {
     }
 
     [When("sample when")]
-    public void WhenTheUserAttemptsToRegisterWithUserNameAndPassword(string userName, string password)
+    public void WhenTheUserAttemptsToRegisterWithUserNameAndPassword()
     { }
 
     [Then("sample then")]
